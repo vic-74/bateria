@@ -10,5 +10,6 @@ const sons = {
 }
 //Funçâo para criar uma div pra cada tecla 
 const criarDiv = (sons) => {
-    div
+    div.classlist('key');
+    div.textcontent = texto;
 }
