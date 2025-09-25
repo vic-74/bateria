@@ -15,5 +15,18 @@ const sons = {
 const criarDiv = (texto) => {
     div.classList('key');
     div.textContent = texto;
+    div.id =texto;
+    document.getElementById('container').append(div);
 }
+
+//função para mostrar botões na tela
+const exibir = Object.keys(sons).forEach(criarDiv)
+
+
+const adicionarEfeito = (letra) => document.getElementById(letra).
+classList.toggle('active');
+
+
+exibir(sons);
+document.getElementById('container')
 
