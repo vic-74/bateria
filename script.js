@@ -1,15 +1,19 @@
+//Criação das constantes de som
 const sons = {
     'A' : 'boom.wav',
-    'D' : 'boom.wav',
-    'H' : 'boom.wav',
-    'I' : 'boom.wav',
-    'G' : 'boom.wav',
-    'C' : 'boom.wav',
-    'B' : 'boom.wav',
-    'N' : 'boom.wav',
+    'S' : 'clap.wav',
+    'D' : 'hithat.wav',
+    'F' : 'hithat.wav',
+    'G' : 'kick.wav',
+    'H' : 'openhat.wav',
+    'I' : 'ride.wav',
+    'J' : 'snare.wav',
+    'K' : 'tink.wav',
+    'L' : 'tom.wav',
 }
-//Funçâo para criar uma div pra cada tecla 
-const criarDiv = (sons) => {
-    div.classlist('key');
-    div.textcontent = texto;
+//Função para criar uma div para cada tecla
+const criarDiv = (texto) => {
+    div.classList('key');
+    div.textContent = texto;
 }
+
