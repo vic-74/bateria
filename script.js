@@ -2,7 +2,6 @@ const sons = {
     'A' : 'boom.wav',
     'S' : 'clap.wav',
     'D' : 'hithat.wav',
-    'F' : 'hithat.wav',
     'G' : 'kick.wav',
     'H' : 'openhat.wav',
     'I' : 'ride.wav',
@@ -38,7 +37,7 @@ const adicionarEfeito = (letra) => {
 const tocarSom = (letra) => {
     const som = sons[letra];
     if (!som) return;
-    const audio = new Audio(`sons/${som}`);
+    const audio = new Audio(`BATERIA-MAIN/${som}`);
     audio.play();
     adicionarEfeito(letra);
 };
@@ -46,4 +45,4 @@ const tocarSom = (letra) => {
 document.addEventListener('keydown', (event) => {
     const letra = event.key.toUpperCase();
     tocarSom(letra);
-})
+});
